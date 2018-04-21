@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="static/vue.js"></script>
+    
+	<link rel="stylesheet" href="bootstrap.css">
+    <title>Hello Animation - Transition</title>
+	<style> 
+
+	</style>
+</head>
+<body>
+
+    <div id="app" >
+		<!-- v-if 操作dom, v-show 操作的样式-->
+		<!-- 如果频繁的切换dom使用 v-show,当数据一开始就确定下来，使用v-if更好一些-->
+		<!-- <script src="../node_modules/axios/dist/axios.js"></script> -->
+		<!-- -->
+			
+		<button @click="love = !love"> 点击 </button>
+		<div v-if="love"> Moi Moi </div>
+
+    </div>
+	
+    <br/>
+	
+    <script>
+        var vm=new Vue({    //
+            el: '#app',     // 
+			data:{
+				love:true
+			}
+        });
+		
+		//JSON.stringify()
+    </script>
+
+
+</body>
+</html>
